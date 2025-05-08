@@ -19,6 +19,7 @@ import java.util.List;
 //  not export sun.nio.ch to unnamed module ... "
 // Follow this advice: https://stackoverflow.com/questions/73465937/apache-spark-3-3-0-breaks-on-java-17-with-cannot-access-class-sun-nio-ch-direct
 // In short: add this JVM Option in IDEA IDE: "--add-exports java.base/sun.nio.ch=ALL-UNNAMED"
+// Or even better (to stop warnings): "--add-exports java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/java.io=ALL-UNNAMED"
 
 public class SparkJavaElasticStreamTest {
 
